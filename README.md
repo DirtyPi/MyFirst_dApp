@@ -1,9 +1,10 @@
 # WavePortal Dapp Project
 
 The WavePortal Dapp project is a decentralized application that enables users to send messages to each other while storing the data on the Ethereum blockchain. This project is ideal for developers who want to learn about blockchain technology and cryptocurrency.
-Technologies Used
 
-## This web3 decentralized application (dapp) was built using the following technologies:
+## Technologies Used
+
+This web3 decentralized application (dapp) was built using the following technologies:
 
     Solidity
     Truffle
