@@ -1,9 +1,16 @@
-#  WavePortal Dapp Project
+##WavePortal Dapp Project
 
-Welcome to the WavePortal Dapp project, a web3 decentralized application that allows users to send messages to each other while saving the data on the Ethereum blockchain. This project is designed for developers who are interested in learning about cryptocurrency and blockchain technology.
+The WavePortal Dapp project is a decentralized application that enables users to send messages to each other while storing the data on the Ethereum blockchain. This project is ideal for developers who want to learn about blockchain technology and cryptocurrency.
+Technologies Used
 
-This project is a web3 decentralized application (dapp) built using Solidity, Truffle, and React.
+#This web3 decentralized application (dapp) was built using the following technologies:
 
-Project Overview:
-In this project, you will build a website called the WavePortal, where anyone on the internet can send a message to you and save it on the blockchain through an Ethereum smart contract. You will also write and deploy the smart contract, and build the website that allows users to connect their wallets and interact with the smart contract.
+    Solidity
+    Truffle
+    React
 
+#Project Overview
+
+The WavePortal project is a website that allows anyone on the internet to send a message to the user and save it on the blockchain via an Ethereum smart contract. The project includes building the website, deploying the smart contract, and enabling users to interact with the smart contract by connecting their wallets.
+
+Overall, this project is an excellent opportunity for developers to gain hands-on experience with blockchain technology and learn how to build a web3 decentralized application using the MERN stack.
