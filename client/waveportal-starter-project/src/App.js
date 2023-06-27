@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useCallback } from "react";
 import { ethers } from "ethers";
 import './App.css';
 import abi from './utils/WavePortal.json';
@@ -111,7 +111,7 @@ const App = () => {
   };  
   
 
-  const getAllWaves = async () => {
+  const getAllWaves = useCallback(async () => {
     const { ethereum } = window;
   
     try {
@@ -136,7 +136,7 @@ const App = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }, [contractABI]);
   
   
   useEffect(() => {
@@ -167,7 +167,7 @@ const App = () => {
         wavePortalContract.off("NewWave", onNewWave);
       }
     };
-  }, []);
+  }, [contractABI]);
   const handleInputChange = (event) => {
     setUserMessage(event.target.value);
   };
@@ -175,12 +175,12 @@ const App = () => {
   useEffect(() => {
     checkIfWalletIsConnected();
     getAllWaves();
-  }, []);
+  }, [getAllWaves]);
 
   return (
     <div className="mainContainer">
       <div className="dataContainer">
-        <div className="header">👋 Hey there!</div>
+        <div className="header"><span role="img" aria-label="Waving hand">👋 Hey there!</span></div>
         <div className="bio">
           I am Hristo and this is my first web3 project that's pretty cool right? Connect your Ethereum wallet and wave at me!
         </div>
